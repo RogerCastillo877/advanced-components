@@ -19,7 +19,7 @@ export class DisplayComponent implements OnChanges {
       const seconds = changes.time.currentValue - minutes * 60;
 
       this.minutes = ("0" + minutes).substring(-2);
-      this.seconds = ("0" + minutes).substring(-2);
+      this.seconds = ("0" + seconds).substring(-2);
     }
   }
 }

@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { TimerComponent } from './timer/timer.component';
 import { DisplayComponent } from './display/display.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { TimerService } from './timer/timer.service';
 
 @NgModule({
   declarations: [

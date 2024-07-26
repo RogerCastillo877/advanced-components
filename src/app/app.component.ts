@@ -6,5 +6,21 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent {
-  title = 'angular-components';
+
+  public isAddTimerVisible: boolean = false;
+  public time: number = 0;
+
+  constructor() { }
+
+  logCountdownEnd() {
+    console.log("the countdown has finish");
+  }
+
+  public showAddTimer() {
+    this.isAddTimerVisible = true;
+  }
+
+  public hideAddTimer() {
+    this.isAddTimerVisible = false;
+  }
 }

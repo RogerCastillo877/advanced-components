@@ -7,11 +7,15 @@ import { TimerComponent } from './timer/timer.component';
 import { DisplayComponent } from './display/display.component';
 import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { TimerService } from './timer/timer.service';
+import { TimerNativeComponent } from './timer-native/timer.component';
+import { TimerNoneComponent } from './timer-none/timer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     TimerComponent,
+    TimerNativeComponent,
+    TimerNoneComponent,
     DisplayComponent,
     ProgressBarComponent
   ],

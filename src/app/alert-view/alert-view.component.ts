@@ -7,11 +7,6 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 })
 export class AlertViewComponent implements OnInit {
 
-  @Output() onCancel = new EventEmitter<void>();
-  @Output() onSubmit = new EventEmitter<number>();
-
-  public time: number = 0;
-
   constructor() { }
 
   ngOnInit(): void {

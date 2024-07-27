@@ -12,19 +12,19 @@ import { Subscription } from 'rxjs';
 export class TimerComponent implements OnInit, OnDestroy {
 
   @Output() onComplete = new EventEmitter<void>();
-  @Input() init: number = 20;
+  @Input() init: number | string = 20;
   private countdownEndSubscription: Subscription | null = null;
   private countdownSubscription: Subscription | null = null;
   public countdown: number = 0;
 
   get progress() {
-    return this.init - this.countdown / this.init * 100;
+    return +this.init - this.countdown / +this.init * 100;
   }
 
   constructor(public timer: TimerService, private cdRef: ChangeDetectorRef) { }
 
   ngOnInit(): void {
-    this.timer.restarCountdown(this.init);
+    this.timer.restarCountdown(+this.init);
     this.countdownEndSubscription = this.timer.countdownEnd$.subscribe(() => {
       this.onComplete.emit();
     });

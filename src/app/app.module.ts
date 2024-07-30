@@ -9,6 +9,8 @@ import { ProgressBarComponent } from './progress-bar/progress-bar.component';
 import { TimerService } from './timer/timer.service';
 import { AlertViewComponent } from './alert-view/alert-view.component';
 import { FormsModule } from '@angular/forms';
+import { TabComponent } from './tab/tab.component';
+import { TabsComponent } from './tabs/tabs.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +18,9 @@ import { FormsModule } from '@angular/forms';
     TimerComponent,
     DisplayComponent,
     ProgressBarComponent,
-    AlertViewComponent
+    AlertViewComponent,
+    TabComponent,
+    TabsComponent
   ],
   imports: [
     BrowserModule,
